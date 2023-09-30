@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: #0e1538;
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .boxx {
+      position: relative;
+      width: 30em;
+      height: 30em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 2em;
+      padding-top: 2em;
+
+    }
+
+    .boxx::after {
+      content: "";
+      position: absolute;
+      inset: 4px;
+      background: hsl(0, 8%, 85%);
+      border-radius: 16px;
+    }
+
+    .boxx::before {
+      content: "";
+      position: absolute;
+      width: 28em;
+      height: 25em;
+      background: linear-gradient(#00ccff, #d400d4);
+      animation: animate 4s linear infinite;
+    }
+
+    @keyframes animate {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(350deg);
+      }
+    }
+
+    #div1 {
+      color: black;
+      font-size: 2em;
+      z-index: 2;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      padding-top: 1em;
+      margin-left: 1em;
+      margin-right: 1em;
+
+    }
+
+    #div2 {
+      color: black;
+      font-size: large;
+      z-index: 1;
+      height: 2em;
+      width: 4em;
+
+    }
+
+    #div2 a {
+      z-index: 1;
+      box-sizing: border-box;
+      border-radius: 1em;
+      margin: 3%;
+      text-decoration: none;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: larger;
+
+    }
+
+    #div2 {
+      margin-top: 2em;
+      height: 4em;
+      width: 10em;
+      border-radius: 2em;
+      padding: 1em;
+      padding-left: 3em;
+      margin-left: 6em;
+      margin-bottom: 2em;
+
+    }
+
+    #div2:hover {
+      background-color: #00ccff;
+    }
+
+    #or {
+      margin-left: 5.5em;
+      margin-top: 2em;
+
+    }
+
+    #div1 p {
+
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      padding-top: 1em;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="boxx">
+    <div id="div1"> For order and manufacturing purpose send message through gmail :<a
+        href="mailto:sakengandtrading@gmail.com">
+        sakengandtrading@gmail.com
+      </a>
+      <div id="or">OR </div>
+      <div id="div2">
+        <a href="mailto:sakengandtrading@gmail.com">
+          Click Me
+        </a>
+      </div>
+    </div>
+
+  </div>
+</body>
+
+</html>

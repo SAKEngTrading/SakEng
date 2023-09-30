@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="style.css">
+  <title>SAK Engineering</title>
+</head>
+
+<body>
+
+
+  <header>
+    <div id="logo">
+      <img src="./image/logo.png" alt="SAK Engineering" width="300em " height="150em">
+    </div>
+    <nav>
+      <ul>
+        <li> <a class="nav-link" href="index.html">Home</a></li>
+        <li> <a class="nav-link" href="about.html">About</a></li>
+        <li> <a class="nav-link" href="service.html">Services</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+        <li><a class="nav-link" href="Location.html">Location</a></li>
+      </ul>
+    </nav>
+
+  </header>
+  <div id="heading">
+    <h1>SAK Enginerring & Trading</h1>
+    <p>We specialize in manufacturing spares and providing general order supply services for the following sectors:
+    </p>
+    <p>Steel Sector,Textile Sector & Food Sector</p>
+  </div>
+
+  <div class="slider">
+    <div class="slide">
+      <img src="./image/main.jpg" alt="Image 1">
+      <div class="slide-text">
+        Welcome To SAK Engineering & Trading
+      </div>
+    </div>
+    <!-- <div class="slide">
+            <img src="./image/" alt="Image 2">
+          
+          </div> -->
+    <!-- <div class="slide">
+            <img src="./image/main3.jpg" alt="Image 3">
+              
+        </div>  -->
+  </div>
+
+
+  <footer>
+    <p>&copy; 2023 SAK Engineering & Trading. All rights reserved.</p>
+  </footer>
+
+
+
+</body>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var slides = document.querySelectorAll(".slide");
+    var currentSlide = 0;
+    var slideInterval = setInterval(nextSlide, 3000);
+
+    function nextSlide() {
+      slides[currentSlide].style.display = "none";
+      currentSlide = (currentSlide + 1) % slides.length;
+      slides[currentSlide].style.display = "block";
+    }
+  });
+</script>
+
+</html>
